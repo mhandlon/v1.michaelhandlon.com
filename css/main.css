@@ -11,9 +11,13 @@
    ========================================================================== */
 
 html {
+    height: 100%;
+    width: 100%;
+    /*
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    */
 }
 
 /*
@@ -39,7 +43,7 @@ html {
 /*
  * A better looking default horizontal rule
  */
-
+/*
 hr {
     display: block;
     height: 1px;
@@ -47,6 +51,13 @@ hr {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+}
+*/
+
+hr {
+    border-color: #57ad68;
+    border-width: 3px;
+    max-width: 50px;
 }
 
 /*
@@ -83,46 +94,69 @@ textarea {
 }
 
 /* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 body {
     font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    /* background-color: #57ad68; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+hr {
+    border-width: 3px;
+    max-width: 50px;
+}
+
+a {
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+    color: #57ad68;
+    text-decoration: none; }
+    a:hover, a:focus {
+        color: #458c53;
+    }
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 nav {
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     background-color: rgba(0, 0, 0, 0.3);
-
     text-transform: uppercase;
     font-weight: 700;
     color: #777;
     border-bottom: black solid 1px;
-
-    /*
-    top: 0;
-    z-index: 100;
-    position: fixed;
-    width: 100%;
-    */
 }
-
+/*
 a:hover {
     color: white;
+    text-decoration: none;
 }
-
+*/
 .navbar-brand {
-    color: #777;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .nav-item {
@@ -131,11 +165,44 @@ a:hover {
 
 .nav-item a {
     font-size: 13px;
-    color: #777;
+    color: rgba(255, 255, 255, 0.7); }
+    .nav-item a:focus,
+    .nav-item a:hover {
+        color: white;
+        text-decoration: none;
 }
 
-h1 {
-    font-size: 4em;
+figure {
+    margin: 0;
+}
+
+figure.portrait {
+    float: right;
+    width: 50%;
+    height: 355px;
+}
+
+figure.portrait img {
+    border-bottom: 1px solid #efefef;
+    width: 100%;
+}
+
+figure.portrait p {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 90%;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+header {
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-image: url("../img/collinsbw.jpg");
 }
 
 header .header-content {
@@ -162,19 +229,45 @@ header .header-content .header-content-inner {
     text-align: center;
 }
 
+header.inner .header-content .header-content-inner {
+    padding: 0;
+}
+
+header.inner {
+    position: relative;
+    height: 360px;
+}
+
+header.inner .header-content {
+    position: absolute;
+    top: 312px;
+    width: 100%;
+}
+
+header.inner .header-content .header-content-inner h1 {
+    padding: 0.25em;
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 header .header-content .header-content-inner h1 {
     color: white;
     text-shadow: none;
+    padding: 0.25em;
+    font-size: 4em;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 header .header-content .header-content-inner hr {
     margin: 30px auto;
 }
 
-hr {
+hr.hello, hr.roles, hr.contact {
     border-color: #57ad68;
-    border-width: 3px;
-    max-width: 50px;
 }
 
 header .header-content .header-content-inner p {
@@ -190,6 +283,107 @@ header .header-content .header-content-inner p {
     font-weight: 700;
     text-transform: uppercase;
 
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+
+    padding: 15px 30px;
+}
+
+#btn_about {
+    background-color: #57ad68;
+    border-color: #57ad68;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* about section */
+
+#about {
+    background-color: #57ad68;
+}
+
+hr.about {
+    border-color: white;
+}
+
+p.about {
+    margin-bottom: 20px;
+}
+
+.about {
+    color: white;
+}
+
+.text-faded {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#btn_story {
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+
+#roles {
+
+}
+
+h2.roles {
+    margin-top: 50px;
+}
+
+.bg-dark {
+    background-color: #222;
+    color: white;
+}
+
+aside {
+    padding: 50px 0;
+}
+
+.call-to-action h2 {
+    margin: 0 auto 20px;
+}
+
+.oss-love strong {
+    font-size: 2em;
+}
+
+.btn-default {
+    color: #222;
+    background-color: white;
+    border-color: white;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle .btn-default {
+    color: #222;
+    background-color: #f2f2f2;
+    border-color: #ededed;
+}
+
+.btn-default:active, .btn-default.active, .open > .dropdown-toggle .btn-default {
+    background-image: none;
+}
+
+.btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
+    background-color: white;
+    border-color: white;
+}
+
+.btn-default .badge {
+    color: white;
+    background-color: #222;
+}
+
+.btn-primary {
+    color: white;
     background-color: #57ad68;
     border-color: #57ad68;
     -webkit-transition: all 0.35s;
@@ -197,22 +391,60 @@ header .header-content .header-content-inner p {
     transition: all 0.35s;
 }
 
-section {
-    height: 300px;
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle .btn-primary {
+    color: white;
+    background-color: #4d9e5d;
+    border-color: #4a9759;
 }
 
-header {
-    background-size: cover;
-    background-image: url("../img/bowling.jpg");
-    height: 100px;
+.navbar-default .nav > li > a,
+.navbar-default .nav > li > a:focus {
+    color: rgba(255, 255, 255, 0.7);
 }
 
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus:hover {
+    color: white;
+}
 
+.btn-primary:active, .btn-primary.active, .open > .dropdown-toggle .btn-primary {
+    background-image: none;
+}
 
+.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
+    background-color: #57ad68;
+    border-color: #57ad68;
+}
 
+.btn-primary .badge {
+    color: #57ad68;
+    background-color: white;
+}
 
+/* contact */
 
+.fa-3x {
+    color: #222;
+    font-size: 4em;
+}
 
+#cicons {
+    margin-top: 50px;
+}
+
+#contact div div div a p {
+    font-size: 1.25em;
+    color: #57ad68;
+}
+
+#content ul {
+    font-size: 1.1em;
+}
+
+.footnote {
+    font-size: 1em;
+    color: #cecece;
+}
 
 /* ==========================================================================
    Helper classes

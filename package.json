@@ -1,0 +1,9 @@
+{
+  "name": "michaelhandlon.com",
+  "description": "Michael Handlon's Website",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "wowjs": "*"
+  }
+}

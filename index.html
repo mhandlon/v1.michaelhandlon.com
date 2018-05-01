@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-        <title>Michael Handlon a software engineer living near Chicago, IL</title>
-        <meta name="description" content=" A software developer living near Chicago, IL">
+        <meta name="description" content=" A software developer living in Miami, Fl">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Michael Handlon a software engineer living in Miami, Fl</title>
 
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
@@ -14,21 +14,24 @@
 
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <!-- link rel="stylesheet" href="css/normalize.css"-->
+
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <!-- script defer src="fontawesome-free-5.0.8/svg-with-js/js/fontawesome-all.min.js"></script-->
+        <link rel="stylesheet" type="text/css" href="fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.min.css"></link>
+
+        <link rel="stylesheet" href="node_modules/wowjs/css/libs/animate.css">
+
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
         <nav class="navbar navbar-default fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">Michael Handlon</a>
 
                 <ul class="nav">
-                    <li class="nav-item"><a href="/about">About</a></li>
-                    <li class="nav-item"><a href="/publications">Thoughts &amp; ideas</a></li>
-                    <li class="nav-item"><a href="/open-source">Open Source</a></li>
+                    <li class="nav-item"><a href="/about.html">About</a></li>
+                    <li class="nav-item"><a href="/open-source.html ">Open Source</a></li>
                     <li class="nav-item"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -38,32 +41,140 @@
             <div class="header-content">
                 <div class="header-content-inner">
                     <h1>Hi! I'm Michael.</h1>
-                    <hr>
-                    <p>A Software Engineer living near Chicago, IL</p>
+                    <hr class="hello">
+                    <p>Software Engineer and Open Source Enthusiast living in Miami, Fl.</p>
                     <br />
-                    <a href="#about" class="btn btn-primary btn-xl">More about me</a>
+                    <a id="btn_about" href="#about" class="btn btn-primary btn-xl">More about me</a>
                 </div>
             </div>
         </header>
 
-        <section id=""></section>
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-lg-2"></div>
+                    <div class="col col-lg-8 text-center">
+                        <h2 class="about">I like to help.</h2>
+                        <hr class="about">
+                        <p class="about text-faded">I like to improve the software development process and write robust software. I love working with talented people, contributing to open source projects, and adding technical vision to strategic conversations.</p>
+                        <a id="btn_story" href="/about.html" class="btn btn-default">The story so far</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="container">
-        </div>
+        <aside class="bg-dark">
+            <div class="container text-center">
+                <div class="call-to-action oss-love">
+                    <h2>I &hearts; open source!</h2>
+                    <!-- p>I maintain <strong>44</strong> open source projects with over <strong>594,000</strong> downloads;</p-->
+                    <p>I love giving back.</p>
+                    <a href="/open-source.html" class="btn btn-default btn-xl wow tada">Open source projects</a>
+                </div>
+            </div>
+        </aside>
 
-        <!-- script src="js/vendor/modernizr-3.5.0.min.js"></script-->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-lg-2"></div>
+                    <div class="col col-lg-8 text-center">
+                        <h2>Let's Get In Touch!</h2>
+                        <hr class="contact">
+                        <p>Ready to start your next project with me? Curious what I am up to? Have a food, film, or music recommendation?</p>
+                    </div>
+                </div>
+                <div id="cicons" class="row">
+                    <div class="col col-lg-4 text-center">
+                        <a href="https://twitter.com/mhandlon">
+                            <i class="fab fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                            <p>mhandlon</p>
+                        </a>
+                    </div>
+                    <div class="col col-lg-4 text-center">
+                        <a href="https://github.com/mhandlon">
+                            <i class="fab fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                            <p>mhandlon</p>
+                        </a>
+                    </div>
+                    <div class="col col-lg-4 text-center">
+                        <a href="mailto:micahel.handlon@gmail.com">
+                            <i class="far fa-envelope fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                            <p>micahel.handlon@gmail.com</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"</script>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="node_modules/wowjs/dist/wow.min.js"></script>
+
+        <script>
+            var winHeight = $(window).height();
+            $("header").height(winHeight);
+            //var winWidth = $(window).width()
+
+            $(window).resize(function(){
+                var winHeight = $(window).height();
+                $("header").height(winHeight)
+            });
+
+            $(window).scroll(function(){
+                myScroll(2/3);
+            });
+
+            $(".nav-item a").hover(function(){
+                var winHeight = $(window).height();
+                var changeAt = winHeight * (2/3);
+
+                if(window.pageYOffset>changeAt) {
+                    $(this).css('color', '#57ad68');
+                } else {
+                    $(this).css('color', 'white');
+                }
+
+            },function(){
+                var winHeight = $(window).height();
+                var changeAt = winHeight * (2/3);
+
+                if(window.pageYOffset>changeAt) {
+                    $(this).css('color', 'black');
+                } else {
+                    $(this).css('color', 'rgba(255, 255, 255, 0.7)');
+                }
+
+            });
+
+            $('.navbar-brand').hover(function() {
+                var winHeight = $(window).height();
+                var changeAt = winHeight * (2 / 3);
+
+                if (window.pageYOffset > changeAt) {
+                    $(this).css('color', '#458c53');
+                } else {
+                    $(this).css('color', 'white');
+                }
+            },function(){
+                var winHeight = $(window).height();
+                var changeAt = winHeight * (2/3);
+
+                if(window.pageYOffset>changeAt) {
+                    $(this).css('color', '#57ad68');
+                } else {
+                    $(this).css('color', 'rgba(255, 255, 255, 0.7)');
+                }
+            });
+
+        </script>
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+            ga('create','UA-73393175-1','auto');ga('send','pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     </body>
